@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://Fenhousj:Kayden28@cluster0-9ji1c.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://Fenhousj:Kayden28@cluster0-9ji1c.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "kaydenisthebestkid"
 }
