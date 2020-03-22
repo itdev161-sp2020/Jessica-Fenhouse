@@ -68,15 +68,15 @@ async (req, res) => {
                 }
             };
 
-            jwt.sign{
+            jwt.sign(
                 payload,
                 config.get('jwtSecret'),
                 { expiresIn: '10hr' },
                 (err, token) => {
                     if (err) throw err;
-                    res.json{{ token: token }};
+                    res.json({ token: token });
                 }
-            };
+            );
         } catch (error) {
             res.status(500).send('Server error');
         }
