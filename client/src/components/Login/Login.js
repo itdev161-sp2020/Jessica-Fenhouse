@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 
 const Login = ({ authenticateUser }) => {
     let history = useHistory();
-    const [useData, setUserData] = useState({
+    const [userData, setUserData] = useState({
         email: '',
         password: ''
     });
@@ -16,7 +16,7 @@ const Login = ({ authenticateUser }) => {
     const onChange = e => {
         const { name, value } = e.target;
         setUserData({
-            ...useData,
+            ...userData,
             [name]: value
         })
     }
